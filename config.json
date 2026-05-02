@@ -1,0 +1,102 @@
+{
+  "SYSTEM_OPTIONS": {
+    "CLIENT_ID": "xxx",
+    "DEVICE_ID": "xxx",
+    "NETWORK": {
+      "OTA_VERSION_URL": "https://api.tenclass.net/xiaozhi/ota/",
+      "WEBSOCKET_URL": "wss://api.tenclass.net/xiaozhi/v1/",
+      "WEBSOCKET_ACCESS_TOKEN": "xxx",
+      "MQTT_INFO": {
+        "endpoint": "mqtt.xiaozhi.me",
+        "client_id": "xxx",
+        "username": "xxx",
+        "password": "xxx",
+        "publish_topic": "device-server",
+        "subscribe_topic": "null"
+      },
+      "ACTIVATION_VERSION": "v2",
+      "AUTHORIZATION_URL": "https://xiaozhi.me/"
+    },
+    "WINDOW_SIZE_MODE": "default"
+  },
+  "WAKE_WORD_OPTIONS": {
+    "USE_WAKE_WORD": true,
+    "MODEL_PATH": "models",
+    "NUM_THREADS": 4,
+    "PROVIDER": "cpu",
+    "MAX_ACTIVE_PATHS": 2,
+    "KEYWORDS_SCORE": 1.8,
+    "KEYWORDS_THRESHOLD": 0.2,
+    "NUM_TRAILING_BLANKS": 1
+  },
+  "CAMERA": {
+    "camera_index": 0,
+    "frame_width": 640,
+    "frame_height": 480,
+    "fps": 30,
+    "Local_VL_url": "https://open.bigmodel.cn/api/paas/v4/",
+    "VLapi_key": "",
+    "models": "glm-4v-plus"
+  },
+  "SHORTCUTS": {
+    "ENABLED": true,
+    "MANUAL_PRESS": {
+      "modifier": "ctrl",
+      "key": "j",
+      "description": "按住说话"
+    },
+    "AUTO_TOGGLE": {
+      "modifier": "ctrl",
+      "key": "k",
+      "description": "自动对话"
+    },
+    "ABORT": {
+      "modifier": "ctrl",
+      "key": "q",
+      "description": "中断对话"
+    },
+    "MODE_TOGGLE": {
+      "modifier": "ctrl",
+      "key": "m",
+      "description": "切换模式"
+    },
+    "WINDOW_TOGGLE": {
+      "modifier": "ctrl",
+      "key": "w",
+      "description": "显示/隐藏窗口"
+    }
+  },
+  "AEC_OPTIONS": {
+    "ENABLED": false,
+    "BUFFER_MAX_LENGTH": 200,
+    "FRAME_DELAY": 3,
+    "FILTER_LENGTH_RATIO": 0.4,
+    "ENABLE_PREPROCESS": true
+  },
+  "AUDIO_DEVICES": {
+    "input_device_id": 1,
+    "input_device_name": "MacBook Pro Microphone (默认)",
+    "output_device_id": 2,
+    "output_device_name": "MacBook Pro Speakers (默认)",
+    "input_sample_rate": 48000,
+    "output_sample_rate": 48000,
+    "input_channels": 1,
+    "output_channels": 2
+  },
+  "DESK_LAMP": {
+    "ip": "192.168.xx.xx",
+    "auto_scan": true,
+    "scan_timeout": 3
+  },
+  "MUSIC_OPTIONS": {
+    "SEARCH_URL": "http://xxx:5000/stream_pcm",
+    "BASE_URL": "http://xxx:5000",
+    "PLAY_URL": "http://api.xiaodaokg.com/kuwo.php",
+    "LYRIC_URL": "https://api.xiaodaokg.com/kw/kwlyric.php",
+    "HEADERS": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+      "Accept": "*/*",
+      "Connection": "keep-alive"
+    }
+  }
+}
